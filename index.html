@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page for Marcus Aurelius</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      #img-caption {
+        font-size: x-small;
+        color: black;
+        text-align: center;
+        margin: 0;
+      }
+
+      h2 {
+        padding-bottom: 8px;
+      }
+
+      footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        max-width: 810px;
+        margin-left: 278px;
+        margin-right: auto;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 80px;
+        height: 52px;
+      }
+
+      h4 {
+        max-width: 810px;
+        margin-left: 278px;
+        margin-right: auto;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 48px;
+        margin-right: 80px;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 48px;
+        text-align: center;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      ul li a {
+        color: #fff;
+        padding: 15px;
+      }
+
+      h3 {
+        margin-top: 48px;
+      }
+
+      .container-social {
+        max-width: 810px;
+        margin-left: 278px;
+        margin-right: auto;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 16px;
+        margin-right: 80px;
+        height: 98px;
+        font-size: 32px;
+        color: #fff;
+      }
+
+      .section-black {
+        background-color: black;
+        color: #fff;
+      }
+
+      .navbar.navbar-default {
+        height: 44px;
+        position: inline;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        z-index: 100;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+        position: sticky;
+      }
+
+      .container-fluid {
+        width: 810px;
+        margin-left: 278px;
+        margin-right: 80px;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .responsive-img {
+        display: block;
+        max-width: 100%;
+      }
+        
+      .navbar.navbar-default .navbar-brand-left {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: left;
+      }
+
+      .navbar.navbar-default .navbar-brand-center {
+        margin: 0;  
+        padding: 0;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+      }
+
+      .navbar.navbar-default .navbar-brand-right {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        justify-content: right;
+      }
+        
+      .jumbotron {
+        margin-bottom: 0px;
+        padding-top: 32px;
+        height: 248px;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin: 0;
+        max-width: none;
+      }
+
+      .container-jumbotron {
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+        padding-left: 18px;
+        max-width: none;
+      }
+
+      .jumbotron h1 {
+        font-family: "Montserrat", "Adobe Blank";
+        font-weight: 900;
+        font-style: normal;
+        font-size: 68px;
+        padding-top: 28px;
+        padding-left: 244px;
+        margin-bottom: 0;
+      }
+
+      .lead {
+        font-family: "Montserrat", "Adobe Blank";
+        font-weight: 400;
+        font-style: italic;
+        padding-left: 259px;
+        max-width: 90%;
+      }
+
+      .img-div {
+        padding-top: 0px;
+        padding-left: 11px;
+        max-width: 250px;
+        margin: 0;
+        border: 0;
+        position: absolute;
+      }
+
+      .jumbotron div img {
+        border-radius: 50%;
+        margin: 0;
+        text-align: center;
+      }
+
+      .container-main {
+        width: fit-content;
+        max-width: 810px;
+        margin-left: 278px;
+        margin-right: auto;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 16px;
+        margin-right: 80px;
+      }
+
+      .video-wrapper{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 16px;
+        border-right: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 16px;
+        position: relative;
+        width: 95%;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+
+      .video-wrapper iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container-main p a{
+        text-decoration: underline;
+      }
+
+      .container-main p a:hover{
+        text-decoration: underline;
+      }
+
+      @media (max-width: 880px) {
+
+        footer {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align: center;
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          margin-right: 80px;
+          height: 52px;
+        }
+
+        h4 {
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 48px;
+          margin-right: 80px;
+          font-size: 32px;
+          color: #fff;
+          margin-top: 48px;
+          text-align: center;
+        }
+
+        .container-social {
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 16px;
+          margin-right: 80px;
+          height: 98px;
+          font-size: 32px;
+          color: #fff;
+        }
+
+        /* Navbar Home, Marcus, Ryan, and Me will be center */
+        .container-fluid {
+          width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .container-main {
+          width: fit-content;
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 16px;
+        }
+
+        .jumbotron {
+          margin-bottom: 0px;
+          padding-top: 32px;
+          height: 238px;
+          background-color: black;
+          color: white;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: left;
+          margin: 0;
+          max-width: none;
+        }
+
+        .jumbotron h1 {
+          font-family: "Montserrat", "Adobe Blank";
+          font-weight: 900;
+          font-style: normal;
+          font-size: 58px;
+          padding-top: 8px;
+          padding-left: 244px;
+          margin-bottom: 0;
+        }
+
+        .lead {
+          font-family: "Montserrat", "Adobe Blank";
+          font-weight: 400;
+          font-size: 24px;
+          font-style: italic;
+          padding-left: 259px;
+          max-width: 90%;
+        }
+
+        .container-jumbotron {
+          margin: 0;
+          padding: 0;
+          margin-left: 0px;
+          padding-left: 8px;
+          max-width: none;
+        }
+
+      }
+        
+      @media (max-width: 780px) {
+        
+        footer {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align: center;
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          height: 52px;
+        }
+
+        h4 {
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 48px;
+          font-size: 32px;
+          color: #fff;
+          margin-top: 48px;
+          text-align: center;
+        }
+    
+        .container-social {
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 16px;
+          height: 98px;
+          font-size: 32px;
+          color: #fff;
+        }
+
+        /* Navbar Home, Marcus, Ryan, and Me will be center */
+        .container-fluid {
+          width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .container-main {
+          width: fit-content;
+          max-width: 810px;
+          margin-left: auto;
+          margin-right: auto;
+          border-left: 16px;
+          border-right: 16px;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-top: 16px;
+        }
+
+        .jumbotron div img {
+          max-width: 150px;
+          border-radius: 50%;
+          margin: 0;
+          margin-left: auto;
+          margin-right: auto;
+          position: static;
+          text-align: center;
+        }
+
+        .img-div {
+          width: 150px;
+          height: 150px;
+          padding-top: 0px;
+          padding-left: 0px;
+          margin: 0;
+          border: 0;
+          position: static;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .jumbotron {
+          padding-top: 20px;
+          height: 208px;
+          background-color: black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          max-width: none;
+          text-align: center;
+        }
+
+        .jumbotron h1 {
+          font-family: "Montserrat", "Adobe Blank";
+          font-weight: 900;
+          font-style: normal;
+          font-size: 32px;
+          position: static;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+        }
+
+        .lead {
+          font-size: 0px;
+        }
+
+        .container-jumbotron {
+          text-align: center;
+          display: block;
+        }
+
+        #img-caption {
+          display: none;
+        }
+
+      }
+    </style>
+    <header>
+      <section id="main">
+        <div class="jumbotron jumbotron-fluid">
+          <div id="tribute-info" class="container-jumbotron">
+            <div id="img-div" class="img-div">
+              <img src="https://i.imgur.com/wuD1RrJ.jpg" alt="marcus" id="image" class="responsive-img"></img>
+              <p id="img-caption">Hello Kylie,</p>
+            </div>
+            <h1 id="title">Marcus Aurelius</h1>
+            <p class="lead">“No carelessness in your actions. No confusion in your words. 
+            No imprecision in your thoughts.”</p>
+          </div>
+        </div>
+      </section>
+      <nav class="navbar navbar-expand-md navbar-default navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand-left" href="#main">Home</a>
+          <a class="navbar-brand-center" href="#marcus">Marcus</a>
+          <a class="navbar-brand-center" href="#ryan">Ryan</a>
+          <a class="navbar-brand-right" href="#me">Me</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container-main">
+        <section id="main">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Iy7nWXiVVf4?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1&start=10&mute=1&modestbranding=1&iv_load_policy=3&theme=light&fs=0&color=white&disablekb=1"
+            width="760" height="428" frameborder="0"></iframe>
+          </div>
+        </section>
+        <section id="marcus">
+          <br>
+          <br>
+          <h2 id="headline">Introduction</h2>
+          <p>
+            Agasicles, king of the Spartans, once quipped that he wanted to be ‘the student 
+            of men whose son I should like to be as well.’ It is a critical consideration 
+            we need to make in our search for role models. Stoicism is no exception. Before 
+            we begin our studies we need to ask ourselves: Who are the people that followed 
+            these precepts? Who can I point out as an example? Am I proud to look up to 
+            this person? Do I want to be more like them?<br>
+            <br>
+            And Roman Emperor Marcus Aurelius, born nearly two millennia ago (121 – 180), 
+            is a leader and example who provides a resounding yes.<br>
+            <br>
+            Marcus Annius Verus was born in a prominent and established family but nobody 
+            at the time would have predicted that he would one day be Emperor of the Empire. 
+            There is little that is known of his childhood but he was a serious young man who 
+            also enjoyed wrestling, boxing and hunting. Around his teenage years, the reigning 
+            emperor at the time, Hadrian was nearing death and was childless. He had to pick a 
+            successor and after his first choice, Lucius Ceionius, died unexpectedly, he chose 
+            Antoninus. He was a senator who was also childless and he would have to adopt 
+            Marcus, as per Hadrian’s condition, as well as Ceionius’s son, Lucius Verus. This 
+            is how Marcus’s name changed to Marcus Aurelius Antoninus.<br>
+            <br>
+            Once Hadrian died, it was clear that Marcus was next in line for the most 
+            important position in the empire. His education would become of serious concern 
+            and he would have the privilege of studying under Herodes Atticus, a rhetorician 
+            from Athens (Marcus would later write his Meditations in Greek) as well as Marcus 
+            Cornelius Fronto, his instructor in Latin whose letters of correspondence with 
+            Marcus survive to this day. Marcus would also serve as a consul twice thus 
+            receiving a valuable and practical education.<br>
+            <br>
+            In 161, as Antoninus died and ended one of the longest reigns, Marcus became the 
+            Emperor of the Roman Empire and ruled for nearly two decades until his death in 
+            180. He also co-ruled in the beginning with Lucius Verus, his adopted brother 
+            until Lucius’ death eight years later. His reign wasn’t easy: wars with the 
+            Parthian Empire, the barbarian tribes menacing the Empire on the northern border, 
+            the rise of Christianity as well as the plague that left numerous dead.<br>
+            <br>
+            Marcus’s death came in 180 in his military headquarters in modern day Vienna. 
+            The historian Cassius Dio describes Marcus’s attitude towards his son, Commodus 
+            who he made co-emperor few years earlier and was now to succeed him: “[Marcus] 
+            was not strong in body and was involved in a multitude of troubles throughout 
+            practically his entire reign. But for my part, I admire him all the more for 
+            this very reason, that amid unusual and extraordinary difficulties he both 
+            survived himself and preserved the empire. Just one thing prevented him from 
+            being completely happy, namely, that after rearing and educating his son in the 
+            best possible way he was vastly disappointed in him.”<br>
+            <br>
+            It is important to realize the gravity of that position and the magnitude of 
+            power that Marcus possessed. He held one of—if not the most—powerful positions 
+            in the world at the time. If he chose to, nothing would be off limits. He could 
+            indulge and succumb to temptations, there was nobody that could restrain him 
+            from any of his wishes. There is a reason the adage that power in absolute 
+            absolutely corrupts has been repeated throughout history—it unfortunately 
+            tends to be true. And yet, as the essayist Matthew Arnold remarked, Marcus 
+            proved himself worthy of the position he was in.<br>
+            <br>
+            And it was not only him who offered that verdict. The famous historian Edward 
+            Gibbon wrote that under Marcus, the last of the ‘Five Good Emperors,’ “the 
+            Roman Empire was governed by absolute power, under the guidance of wisdom and 
+            virtue”. The guidance of wisdom and virtue. That’s what separates Marcus from 
+            the majority of past and present world leaders. Just think of the diary that 
+            he left behind, which is now known as his Meditations which we discuss below: 
+            the private thoughts of the most powerful man in the world, admonishing himself 
+            on how to be more virtuous, more just, more immune to temptation, wiser.<br>
+            <br>
+            And for Marcus, Stoicism provided a framework for dealing with the stresses 
+            of daily life as a leader of one of the most powerful empires in human history. 
+            It is not surprising that he wrote his Meditations in the last decade of his 
+            life, while on campaigning against foreign invaders. Passed down from his 
+            mentors and teachers, Marcus embraced the studies of Stoicism which we see 
+            in him thanking his teacher Rusticus for introducing him to Stoicism and 
+            Epictetus inside Meditations. Another influence on Marcus came from Heraclitus, 
+            whose concepts we can see throughout Meditations and who had a strong influence 
+            on Stoic thought. Given the literary world at the time, Marcus was mostly 
+            likely not exposed to Seneca, another one of the three most prominent 
+            Stoics.<br>
+            <br>
+            What is tragic about Marcus, as one scholar wrote, is how his “philosophy—which 
+            is about self-restraint, duty, and respect for others—was so abjectly abandoned 
+            by the imperial line he anointed on his death.”<br>
+            <br>
+            Now it is on us to pick it back up.
+          </p>
+          </p>
+          <h3>Notable Works & Suggested Readings</h3>
+          <p>
+            Marcus’s 
+            <a id="tribute-link" href="https://www.amazon.ca/dp/0812968255?tag=dailystoic0b-20" target="_blank">Meditations</a>
+            is perhaps the only document of its kind ever made. It is the private thoughts 
+            of the world’s most powerful man giving advice to himself on how to make good 
+            on the responsibilities and obligations of his positions. Originally titled,”To 
+            Himself,” Meditations is the definitive text on self-discipline, personal ethics, 
+            humility, self-actualization, and strength. It proved to be equally 
+            inspirational to writers like Ambrose Bierce and Robert Louis Stevenson as he 
+            has been for statesmen like Theodore Roosevelt, Wen Jiabao, and Bill Clinton. 
+            If you read it and aren’t profoundly changed by it, it’s probably because as 
+            Aurelius says “what doesn’t transmit light creates its own darkness.” As 
+            John Stuart Mill put it in his On Liberty, Meditations are “the highest 
+            ethical product of the ancient mind”.<br>
+            <br>
+            It is important to remind ourselves that we are lucky to have access to these. 
+            As Gregory Hays explains, for centuries traces of it was lost until the 
+            beginning of the 10th century, “it reappears in a letter from the scholar 
+            and churchman Arethas.”<br>
+            <br>
+            You HAVE to read 
+            <a href="https://www.amazon.ca/dp/0812968255?tag=dailystoic0b-20" target="_blank">the Hays’s translation</a>. 
+            If you end up loving Marcus, go get 
+            <a href="https://www.amazon.com/Inner-Citadel-Meditations-Marcus-Aurelius/dp/0674007077?tag=dailystoic07-20" target="_blank">The Inner Citadel</a>
+            and 
+            <a href="https://www.amazon.com/Philosophy-Way-Life-Spiritual-Exercises/dp/0631180338?tag=dailystoic07-20" target="_blank">Philosophy as a Way of Life</a>
+            by Pierre Hadot that studies the man (and men) behind the work. 
+            And if you want more on the topic, Marcus inspired 
+            <a href="https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358?tag=dailystoic-20" target="_blank">The Obstacle is the Way</a>, 
+            which you can get a free chapter of if you 
+            <a href="https://dailystoic.com/new-start-here/" target="_blank">sign up for the Daily Stoic newsletter</a>.
+          </p>
+        </section>
+        <section id="ryan">
+          <h3>Reference</h3>
+          <p style="word-break: break-all">
+            <a href="https://ryanholiday.net/" target="_blank">Ryan Holiday</a>, 
+            Who Is Marcus Aurelius? Getting To Know The Roman Emperor. Available at: 
+            <a href="https://dailystoic.com/marcus-aurelius/" target="_blank">https://dailystoic.com/marcus-aurelius/</a>
+            (Accessed: April 18, 2020)
+          </p>
+        </section>
+      </div>
+      <section id="me" class="section-black">
+        <h4>Connect with me</h4>
+        <ul class="container-social">
+        <li><a href="https://twitter.com/engrbugs1" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://github.com/engrbugs" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/herbysio/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </section>
+      <footer>
+        Thank you, <a href="https://powerseductionandwar.com/" target="_blank">Robert Greene</a>, 
+        for the inspiration
+      </footer>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
